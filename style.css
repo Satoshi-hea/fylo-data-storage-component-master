@@ -200,6 +200,7 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   }
 
+  
 .storage-bubble::after {
   content: '';
   position: absolute;
@@ -207,10 +208,10 @@ body {
   right: 0;
   width: 0;
   height: 0;
-  border-top: 20px solid var(--white);
   border-left: 20px solid transparent;
-}}
-
+  border-top: 20px solid var(--white);
+}
+}
 @media (max-width: 899px) {
   body {
     background-image: url('./images/bg-mobile.png');
