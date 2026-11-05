@@ -189,6 +189,7 @@ body {
   .card-storage {
     flex-grow: 1;
     padding-bottom: 40px;
+    padding: 40px;
   }
 
   .storage-bubble {
@@ -199,17 +200,16 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   }
 
-  .storage-bubble::after {
-    content: '';
-    position: absolute;
-    bottom: -16px;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-top: 16px solid var(--white);
-    border-left: 20px solid transparent;
-  }
-}
+.storage-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 20px solid var(--white);
+  border-left: 20px solid transparent;
+}}
 
 @media (max-width: 899px) {
   body {
