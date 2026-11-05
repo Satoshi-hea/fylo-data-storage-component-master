@@ -14,17 +14,45 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
+  <main class="container">
+    <section class="card card-action">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Fylo logo">
+      </div>
+      <div class="icons">
+        <button class="icon-btn" aria-label="Upload document">
+          <img src="./images/icon-document.svg" alt="">
+        </button>
+        <button class="icon-btn" aria-label="Folders">
+          <img src="./images/icon-folder.svg" alt="">
+        </button>
+        <button class="icon-btn" aria-label="Upload to cloud">
+          <img src="./images/icon-upload.svg" alt="">
+        </button>
+      </div>
+    </section>
+    <section class="card card-storage">
+      <p class="storage-text">
+        You’ve used <span>815 GB</span> of your storage
+      </p>
+      <div class="progress-bar-container">
+        <div class="progress-bar">
+          <span class="progress-dot"></span>
+        </div>
+      </div>
+      <div class="storage-limits">
+        <span>0 GB</span>
+        <span>1000 GB</span>
+      </div>
+      <div class="storage-bubble">
+        <span class="bubble-number">185</span>
+        <span class="bubble-unit">GB LEFT</span>
+      </div>
+    </section>
+  </main>
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="#">Mykola Kyzym</a>.
   </footer>
 </body>
 </html>
