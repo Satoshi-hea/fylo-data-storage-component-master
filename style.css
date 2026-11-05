@@ -166,3 +166,56 @@ body {
   color: var(--grayish-blue);
   letter-spacing: 1px;
 }
+
+@media (min-width: 900px) {
+  body {
+    background-image: url('./images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100vw 50vh;
+  }
+
+  .container {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 30px;
+  }
+
+  .card-action {
+    width: 350px;
+    flex-shrink: 0;
+  }
+
+  .card-storage {
+    flex-grow: 1;
+    padding-bottom: 40px;
+  }
+
+  .storage-bubble {
+    position: absolute;
+    top: -48px;
+    right: 40px;
+    margin-top: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .storage-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 16px solid var(--white);
+    border-left: 20px solid transparent;
+  }
+}
+
+@media (max-width: 899px) {
+  body {
+    background-image: url('./images/bg-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
