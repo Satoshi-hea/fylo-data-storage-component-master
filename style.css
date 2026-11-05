@@ -26,3 +26,64 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 90%;
+  max-width: 920px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  background-color: var(--dark-blue);
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card-action {
+  border-top-right-radius: 100px;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.icons {
+  display: flex;
+  gap: 16px;
+}
+
+.icon-btn {
+  background-color: var(--very-dark-blue);
+  border: none;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.icon-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.8;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--pale-blue);
+  text-decoration: none;
+}
